@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace TheNeighborhoodApp
 {
@@ -11,12 +12,15 @@ namespace TheNeighborhoodApp
     {
         SqlConnection cnn = new SqlConnection();
         SqlCommand cmm = new SqlCommand();
-        SqlDataReader dr;
+        //SqlDataReader dr;
+
+        
         public string MyConnection()
         {
-            string con = @"Data Source=LAPTOP-SDGJ5NAJ;Initial Catalog=TheNeighborhoodApp;Integrated Security=True";
-            return con;
+            //@"Data Source=DESKTOP-09ORH5O\MSSQLSERVER01;Initial Catalog=neighborhoodDB;Integrated Security=True;Pooling=False";
+            string con = "";
+           return con;
         }
-
+        
     }
 }
